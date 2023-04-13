@@ -1,17 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 body{
     background-color: yellowgreen;
     background-image: linear-gradient(45deg, #26a119 0%, #FFFB7D 100%);
+    background-repeat: initial;
 }
-
 
 /* header */
 
@@ -24,7 +23,6 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 header .logo{
@@ -34,7 +32,7 @@ header .logo{
     text-decoration: none;
     text-transform: uppercase;
     padding: 0 10px;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 600;
     border-radius: 100%;
     padding: 15px;
@@ -42,7 +40,7 @@ header .logo{
 
 header .navbar{
     position: relative;
-    display: flex;
+    display: inline-flex;
 }
 
 header .navbar li{
@@ -72,7 +70,8 @@ header .navbar a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 30px;
+    padding-left: 75px;
+    padding-top: 70px;
 }
 
 .contenido .tituloBox{
@@ -80,7 +79,6 @@ header .navbar a:hover {
     max-width: 800px;
     margin-top: 100px;
     margin-left: 50px;
-    
 }
 
 .contenido .tituloBox h2{
@@ -94,14 +92,14 @@ header .navbar a:hover {
     background: FFFB7D;
     color: green;
     padding: 0 0px;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 600;
 }
 
 .contenido .tituloBox h4{
     background: none;
     color: rgb(5, 5, 5);
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 600;
     margin: 3%;
 }
@@ -139,22 +137,34 @@ header .navbar a:hover {
     justify-content: flex-end;
     padding-right: 10px;
     margin-top: 50px;
-    
-    
 }
 
 .contenido .imgBox img {
     width: 480px;
-
 }
 
+/* acerca de, nosotros */
+
 .producto{
-    position: relative;
-    width: 720px;
-    height: 200px;
-    display: block;
-    padding: 50px;
+    position: absolute
+    height: 100px;
+    padding: 60px;
     margin: 60px;
+    padding-left: 400px;
+    text-align: justify;
+}
+
+.p1{
+    text-align: justify;
+    font-weight: lighter;
+    padding-top: 90px;
+}
+
+.app{
+    display: flex;
+    position: absolute;
+    left: 10%;
+    margin-top: -200px;
 }
 
 .description{
@@ -163,14 +173,16 @@ header .navbar a:hover {
     height: 100px;
     padding: 50px;
     margin: 60px;
+    text-align: justify;
 }
 
-.description .imagenessec{
+
+/* .description .imagenessec{
     width: 240px;
     display: flex;
     justify-content: space-around;
-    padding-right: 120px;
-    margin-top: 50px;
+    position: absolute;
+
 }
 
 .description .imagenessec .imgsec2{
@@ -178,7 +190,19 @@ header .navbar a:hover {
     margin: 20%;
     padding: 10px;
     border-radius: 60%;
+    position: absolute;
+} */
+
+div.phs{
+    justify-content: space-between;
+    border-radius: 300px;
+    text-align: center;
+    margin: 35px;
+    padding: ;
+
 }
+
+
 
 /* circle */
 .circle{
@@ -191,25 +215,10 @@ header .navbar a:hover {
     height: 100%;
 }
 
-/* Copyright */
-.copyright{
-    position: absolute;
-    bottom: 0;
-    left: 800px;
-    margin-bottom: 20px;
-    padding: 0 100px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.copyright p {
-    color: #26a119;
-}
 
 /* redes sociales */
 .redesSociales{
-    position: fixed;
+    position: absolute;
     right: 0;
     bottom: 0;
     display: flex;
@@ -235,6 +244,6 @@ header .navbar a:hover {
 }
 
 .footcontainer{
-    position: unset;
-    bottom: 100px;
+    position: absolute;
+    margin-top: 350px;
 }
