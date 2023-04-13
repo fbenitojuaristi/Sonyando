@@ -171,6 +171,7 @@ header .navbar a:hover {
     background-color: yellowgreen;
     padding: 15px;
     border-radius: 10px;
+    color: green;
 }
 
 .app{
@@ -258,7 +259,119 @@ header .navbar a:hover {
     
 }
 
-.footcontainer{
+
+/* footer */
+
+.footer{
     position: absolute;
-    margin-top: 350px;
+    margin-top: 300px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 250px;
+    padding-bottom: -100px;
 }
+
+.container{
+    display: flex;
+    background-color: yellowgreen;
+    height: 750px;
+    width: 850px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    margin: auto;
+    margin-top: 150px;
+    border-radius: 12px;
+}
+
+.form{
+    padding: 30px 80px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form h2{
+    font-size: 45px;
+    color: green;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.form p{
+    font-size: 16px;
+    color: #ff5e00;
+    margin-bottom: 25px;
+}
+
+label{
+    font-size: 15px;
+    color: green;
+    margin-bottom: 15px;
+}
+
+.box{
+    border: 0;
+    background-color: #FFFB7D;
+    padding: 15px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    outline: none;
+}
+
+.submit{
+    background-color: green;
+    border: 0;
+    padding: 15px;
+    color: whitesmoke;
+    font-size: 16px;
+    border-radius: 25px;
+    width: 250px;
+    margin-top: 25px;
+}
+
+.info{
+    padding: 50px;
+}
+
+.img-1{
+    width: 300px;
+    margin-bottom: 70px;
+}
+
+.location{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.icons{
+    display: flex;
+    margin-bottom: 31px;
+}
+
+.icons img{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.icons p{
+    font-size: 14px;
+    color: green;
+}
+
+/* @media (max-width:990px){
+    .container{
+        width: 350px;
+        height: 800px;
+        margin-top: 50px;
+    }
+
+    .info{
+        display: none;
+    }
+
+    .form{
+        width: 100%;
+        padding: 30px;
+    }
+} */
